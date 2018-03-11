@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="homeAnchor" prefHeight="494.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+   <children>
+      <JFXButton fx:id="skoda" contentDisplay="TOP" layoutX="34.0" layoutY="42.0" onAction="#skodaAction" prefHeight="144.0" prefWidth="200.0" style="-fx-border-color: #ffffff; -fx-background-color: #36394E;" text="ŠKODA" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="42.0">
+         <graphic>
+            <ImageView fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../content/skodaAuto.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="271.0" layoutY="42.0" prefHeight="144.0" prefWidth="200.0" style="-fx-background-color: #36394E; -fx-border-color: #ffffff;" text="VOLVO" textFill="WHITE" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="40.0">
+         <graphic>
+            <ImageView fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../content/volvoCars.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="271.0" layoutY="228.0" prefHeight="144.0" prefWidth="200.0" style="-fx-background-color: #36394E; -fx-border-color: #ffffff;" text="PORSCHE" textFill="WHITE" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="40.0">
+         <graphic>
+            <ImageView fitHeight="109.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../content/porscheNormal.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="34.0" layoutY="228.0" prefHeight="144.0" prefWidth="200.0" style="-fx-background-color: #36394E; -fx-border-color: #ffffff;" text="FORD" textFill="WHITE" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="40.0">
+         <graphic>
+            <ImageView fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../content/fordPerformance.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

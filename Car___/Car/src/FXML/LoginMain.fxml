@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="logingMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="624.0" style="-fx-background-color: #2d3447;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+	<children>
+		<JFXTextField fx:id="username" focusColor="#a0a2aa" layoutX="172.0" layoutY="160.0" prefHeight="30.0" prefWidth="246.0" promptText="Username" unFocusColor="#a0a2ab">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</JFXTextField>
+		<JFXPasswordField fx:id="password" focusColor="#a0a2ab" layoutX="172.0" layoutY="212.0" prefHeight="30.0" prefWidth="246.0" promptText="Password" unFocusColor="#a0a2ab">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</JFXPasswordField>
+		<JFXButton fx:id="signup" layoutX="501.0" layoutY="14.0" onAction="#signUp" prefHeight="30.0" prefWidth="109.0" style="-fx-background-color: #151928; -fx-border-color: #a0a2ab;" text="Sign UP" textFill="#a0a2ab">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</JFXButton>
+		<JFXButton fx:id="login" layoutX="327.0" layoutY="278.0" onAction="#loginAction" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #2196f3;" text="Login" textFill="#ced1da">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</JFXButton>
+		<JFXCheckBox fx:id="remember" layoutX="158.0" layoutY="278.0" prefHeight="21.0" prefWidth="132.0" text="Remember me" textFill="#a0a2ab">
+			<font>
+				<Font size="15.0" />
+			</font>
+		</JFXCheckBox>
+		<JFXButton fx:id="forgotpassword" layoutX="228.0" layoutY="340.0" text="Forgot password ?" textFill="#a0a2ab" underline="true" wrapText="true">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</JFXButton>
+		<ImageView fitHeight="75.0" fitWidth="146.0" layoutX="258.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0">
+			<image>
+				<Image url="@../../content/icons8-car-filled-50.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="21.0" fitWidth="32.0" layoutX="147.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../content/icons8-user-male-26.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="21.0" fitWidth="32.0" layoutX="147.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../content/icons8-lock-26.png" />
+			</image>
+		</ImageView>
+		<AnchorPane layoutX="197.0" layoutY="90.0" />
+		<ImageView fx:id="progress" fitHeight="25.0" fitWidth="246.0" layoutX="190.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../content/142.gif" />
+			</image>
+		</ImageView>
+		<Label layoutX="228.0" layoutY="90.0" text="Cars Review" textAlignment="CENTER" textFill="#2298f2">
+			<font>
+				<Font name="System Bold" size="24.0" />
+			</font>
+		</Label>
+	</children>
+</AnchorPane>
